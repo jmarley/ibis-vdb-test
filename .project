@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>ibis-vdb-test</name>
+	<comment>No Product Application, version 7.7.3.v20130328-2153-H3-Final</comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.teiid.designer.extension.ui.modelExtensionDefinitionBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>org.teiid.designer.core.modelBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.teiid.designer.core.modelNature</nature>
+	</natures>
+</projectDescription>

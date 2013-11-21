@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connection-factories>
+   <no-tx-connection-factory>
+      <jndi-name>IbisV1DS</jndi-name>
+      <rar-name>connector.ibis.rar</rar-name>
+      <connection-definition>javax.resource.cci.ConnectionFactory</connection-definition>      
+      <config-property name="EndPoint">http://mockibis-1381187054851.rhcloud.com/rest/mockibis/v1/master/content</config-property>           
+      <config-property name="timeout">10000</config-property>
+      <config-property name="RSVersion">1</config-property>                               
+      <max-pool-size>20</max-pool-size>
+    </no-tx-connection-factory>
+</connection-factories>

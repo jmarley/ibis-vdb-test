@@ -18,4 +18,9 @@
       <type href="http://www.w3.org/2001/XMLSchema#string"/>
     </columns>
   </relational:BaseTable>
+  <mmcore:AnnotationContainer xmi:uuid="mmuuid:1c0907ee-d245-4bb6-ada6-3b5f05b8e4f8">
+    <annotations xmi:uuid="mmuuid:84935920-5c02-4ef5-93b9-9353bb8d1f0d" annotatedObject="mmuuid/a728f96c-77ad-4003-b502-d734088a32fa">
+      <tags xmi:uuid="mmuuid:2bcaf6fb-e476-4fd7-863a-06e4745919a0" key="translator:name" value="ibis"/>
+    </annotations>
+  </mmcore:AnnotationContainer>
 </xmi:XMI>

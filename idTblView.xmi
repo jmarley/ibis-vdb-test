@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagram="http://www.metamatrix.com/metamodels/Diagram" xmlns:mmcore="http://www.metamatrix.com/metamodels/Core" xmlns:relational="http://www.metamatrix.com/metamodels/Relational" xmlns:transformation="http://www.metamatrix.com/metamodels/Transformation">
+  <mmcore:ModelAnnotation xmi:uuid="mmuuid:2645c0ac-eadf-4e5f-9e07-d19c1e50c479" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational" modelType="VIRTUAL" ProducerName="Teiid Designer" ProducerVersion="7.7.3.v20130328-2153-H3-Final">
+    <modelImports xmi:uuid="mmuuid:2f4d40b3-40db-4c0b-abab-c1549294c37f" name="XMLSchema" modelLocation="http://www.w3.org/2001/XMLSchema" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:593c2259-e839-42ac-8152-a66a639ffe0e" name="ibisSourceModel" modelLocation="ibisSourceModel.xmi" uuid="mmuuid:a728f96c-77ad-4003-b502-d734088a32fa" modelType="PHYSICAL" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational"/>
+  </mmcore:ModelAnnotation>
+  <relational:BaseTable xmi:uuid="mmuuid:9b09f066-3bca-4ce9-88d1-6e0be6f7642c" name="idTable" nameInSource="" supportsUpdate="false">
+    <columns xmi:uuid="mmuuid:a0c5e0e6-482c-4e9d-a76e-525c9bdedbce" name="id" length="4000" nullable="NULLABLE_UNKNOWN" updateable="false" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
+      <nativeType xsi:nil="true"/>
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:ff3f773d-48dd-45c6-ac89-38445f352632" name="revisionNumber" length="4000" nullable="NULLABLE_UNKNOWN" updateable="false" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
+      <nativeType xsi:nil="true"/>
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+  </relational:BaseTable>
+  <mmcore:AnnotationContainer xmi:uuid="mmuuid:a296a2e4-a604-4bf1-b08e-f028c96600a5">
+    <annotations xmi:uuid="mmuuid:a3e1f4ac-3f06-46a4-add4-4b0e270f898f">
+      <tags xmi:uuid="mmuuid:985ae31d-e55d-4fdb-b200-671e2e5aa3c6" key="translator:name" value="ibis"/>
+      <annotatedObject href="ibisSourceModel.xmi#mmuuid/a728f96c-77ad-4003-b502-d734088a32fa"/>
+    </annotations>
+  </mmcore:AnnotationContainer>
+  <transformation:TransformationContainer xmi:uuid="mmuuid:4ac9c59a-a783-429b-98b8-b32f76c5333e">
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:69b53dd4-4a05-4081-90a6-f5066d49b2a3" outputs="mmuuid/9b09f066-3bca-4ce9-88d1-6e0be6f7642c" target="mmuuid/9b09f066-3bca-4ce9-88d1-6e0be6f7642c">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:11601400-244c-49ee-a882-10dd2056bb61">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:d033aae7-3e9b-4af4-9416-9d220642ab63" selectSql="SELECT * FROM ibisSourceModel.idTable"/>
+        <aliases xmi:uuid="mmuuid:e5591052-66b8-4248-b385-d2da9bb9c49d" alias="idTable">
+          <aliasedObject href="ibisSourceModel.xmi#mmuuid/4ab491ec-ef68-422b-a2c5-37ad19bc0f79"/>
+        </aliases>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:66ac4542-7f6b-424d-b42f-421f3c85f7fa" outputs="mmuuid/a0c5e0e6-482c-4e9d-a76e-525c9bdedbce">
+        <inputs href="ibisSourceModel.xmi#mmuuid/7f67670a-3873-424d-be06-6d7202fb1f72"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:839cc811-d516-402b-a455-5d4df3a7593f" outputs="mmuuid/ff3f773d-48dd-45c6-ac89-38445f352632">
+        <inputs href="ibisSourceModel.xmi#mmuuid/8e23af71-be52-40e8-bf4b-dcc923ef5fc2"/>
+      </nested>
+      <inputs href="ibisSourceModel.xmi#mmuuid/4ab491ec-ef68-422b-a2c5-37ad19bc0f79"/>
+    </transformationMappings>
+  </transformation:TransformationContainer>
+  <diagram:DiagramContainer xmi:uuid="mmuuid:381c556b-1058-494c-9848-d1839265eb6d">
+    <diagram xmi:uuid="mmuuid:7f37692e-b109-4dc5-9c1f-834136eb5c10" type="packageDiagramType" target="mmuuid/2645c0ac-eadf-4e5f-9e07-d19c1e50c479">
+      <diagramEntity xmi:uuid="mmuuid:a8234b48-6582-4916-8a1b-525a6d2c68c6" modelObject="mmuuid/9b09f066-3bca-4ce9-88d1-6e0be6f7642c" xPosition="10" yPosition="10"/>
+    </diagram>
+    <diagram xmi:uuid="mmuuid:9155fe70-4e2a-4862-a0e4-e1018f2746c5" type="transformationDiagramType" target="mmuuid/9b09f066-3bca-4ce9-88d1-6e0be6f7642c">
+      <diagramEntity xmi:uuid="mmuuid:ae4ded0e-4427-47ca-b676-8e700a6e8c1a" modelObject="mmuuid/9b09f066-3bca-4ce9-88d1-6e0be6f7642c" xPosition="30" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:43ea7a81-4b2b-4edc-8325-979e4c7faa85" name="T" modelObject="mmuuid/69b53dd4-4a05-4081-90a6-f5066d49b2a3" xPosition="288" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:cf782dc8-8df8-4024-8c9c-a35ec11929f6" xPosition="338" yPosition="50">
+        <modelObject href="ibisSourceModel.xmi#mmuuid/4ab491ec-ef68-422b-a2c5-37ad19bc0f79"/>
+      </diagramEntity>
+    </diagram>
+  </diagram:DiagramContainer>
+</xmi:XMI>

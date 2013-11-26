@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagram="http://www.metamatrix.com/metamodels/Diagram" xmlns:mmcore="http://www.metamatrix.com/metamodels/Core" xmlns:relational="http://www.metamatrix.com/metamodels/Relational" xmlns:transformation="http://www.metamatrix.com/metamodels/Transformation">
+  <mmcore:ModelAnnotation xmi:uuid="mmuuid:802cbb4d-80f4-4fbb-ab7c-f8241645d130" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational" modelType="VIRTUAL" ProducerName="Teiid Designer" ProducerVersion="7.7.3.v20130328-2153-H3-Final">
+    <modelImports xmi:uuid="mmuuid:d4f98ed9-c861-4f29-9cab-7a4884504c63" name="IbisArticle" modelLocation="../source-model-definitions/IbisArticle.xmi" uuid="mmuuid:354ebd47-ce9e-49fb-9a95-f4a785cffe15" modelType="PHYSICAL" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational"/>
+    <modelImports xmi:uuid="mmuuid:f301d22f-20a9-4792-98b9-e58367a8f77b" name="SimpleDatatypes-instance" modelLocation="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:6aa59e17-c1b7-4201-b0f5-ea39eea92782" name="XMLSchema" modelLocation="http://www.w3.org/2001/XMLSchema" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+  </mmcore:ModelAnnotation>
+  <relational:BaseTable xmi:uuid="mmuuid:a90c09f6-8832-4955-b30b-01e5ea1c311b" name="IbisArticle" nameInSource="IbisArticle" supportsUpdate="false">
+    <columns xmi:uuid="mmuuid:6730ba51-38e4-4ec2-95dc-b4a233884bcc" name="url" nameInSource="" length="4000" nullable="NULLABLE_UNKNOWN" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
+      <nativeType xsi:nil="true"/>
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:8f35d379-0903-4608-9d08-1feb40240d4c" name="headline" length="4000" nullable="NULLABLE_UNKNOWN" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
+      <nativeType xsi:nil="true"/>
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:aa692eef-b07a-4e1e-b29a-1dd83d1ba62f" name="title" length="4000" nullable="NULLABLE_UNKNOWN" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
+      <nativeType xsi:nil="true"/>
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:2b773da4-4686-4479-b07e-6c69e6a733e2" name="mobileHeadline" length="4000" nullable="NULLABLE_UNKNOWN" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
+      <nativeType xsi:nil="true"/>
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:98a7b6d1-af93-4384-ae1e-ce8c583ab370" name="description" nameInSource="seo.description" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:f5efc9f5-aefa-4fa6-8979-80b99d6ce7ee" name="slug" length="4000" nullable="NULLABLE_UNKNOWN" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
+      <nativeType xsi:nil="true"/>
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:b41b64b4-9161-415e-813f-5febc10dc729" name="firstPublishDate" length="4000" nullable="NULLABLE_UNKNOWN" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
+      <nativeType xsi:nil="true"/>
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:912cc434-7e55-4254-b2d3-52b1a8b3fa1b" name="lastPublishDate" nameInSource="publishDate" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:f82b51f5-8472-4e7f-8f54-2a37bd810060" name="editorialSource" nameInSource="" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:088c26d6-1b64-4d2b-9498-5e2cd568c15f" name="dataStore" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:46471cd9-49d5-449f-9fbb-e2ddf197d883" name="byline" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:f1e931b4-360b-4dbe-b195-42651032e48c" name="branding" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:b003883d-21a5-49bc-abf0-f010a4491319" name="section" nameInSource="sectionName" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:b8d64c95-8d8c-4754-bfb8-e6fee42a28b2" name="location" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:4710f95b-7338-4892-b0a7-21e0518ab6cd" name="hightlights">
+      <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#clob"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:bb0d09e5-3a9d-4554-a967-f59f46a97cc1" name="partner" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:3349af1a-349c-4996-8965-f234112749d9" name="smsBody" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:2161b3c8-846b-4fb9-9265-3950e8451e65" name="body" nativeType="rich_text">
+      <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#clob"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:2365bfbd-2a88-4a03-8755-864da385bc4e" name="relatedMedia">
+      <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#clob"/>
+    </columns>
+  </relational:BaseTable>
+  <mmcore:AnnotationContainer xmi:uuid="mmuuid:1a6c81b3-df14-44e3-a705-ce264fd23639"/>
+  <transformation:TransformationContainer xmi:uuid="mmuuid:bed04c9a-220e-4f0e-a334-612f9736bf90">
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:096097bf-130a-43ad-9608-ac36f9be0def" outputs="mmuuid/a90c09f6-8832-4955-b30b-01e5ea1c311b" target="mmuuid/a90c09f6-8832-4955-b30b-01e5ea1c311b">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:6464cecb-ce5e-4d1f-a46f-d6ebaae4b1da">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:2b95a228-cea9-4652-968c-447c25c1460b" selectSql="SELECT&#xa;&#x9;&#x9;IbisArticle.IbisArticle.url, IbisArticle.IbisArticle.headline, IbisArticle.IbisArticle.title, IbisArticle.IbisArticle.mobileHeadline, IbisArticle.IbisArticle.description, IbisArticle.IbisArticle.slug, IbisArticle.IbisArticle.firstPublishDate, IbisArticle.IbisArticle.lastPublishDate, IbisArticle.IbisArticle.editorialSource, IbisArticle.IbisArticle.dataStore, IbisArticle.IbisArticle.byline, IbisArticle.IbisArticle.branding, IbisArticle.IbisArticle.section, IbisArticle.IbisArticle.location, IbisArticle.IbisArticle.hightlights, IbisArticle.IbisArticle.partner, IbisArticle.IbisArticle.smsBody, IbisArticle.IbisArticle.body, IbisArticle.IbisArticle.relatedMedia&#xa;&#x9;FROM&#xa;&#x9;&#x9;IbisArticle.IbisArticle&#xa;&#x9;WHERE&#xa;&#x9;&#x9;IbisArticle.IbisArticle.type = 'article'"/>
+        <aliases xmi:uuid="mmuuid:84c6dde0-5939-463f-a2ad-cbc29561796c" alias="IbisArticle">
+          <aliasedObject href="../source-model-definitions/IbisArticle.xmi#mmuuid/839b80d4-ba56-4286-8674-78359388da99"/>
+        </aliases>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:5f142493-d03d-4fac-bebe-90a943d47e94" outputs="mmuuid/6730ba51-38e4-4ec2-95dc-b4a233884bcc">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/8200a3dd-6619-4222-8d8b-e96ceb853f88"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:efabca1b-d713-4ee7-84bf-00dabf29605b" outputs="mmuuid/8f35d379-0903-4608-9d08-1feb40240d4c">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/a648e3ab-65ad-47ab-8ab4-aef5c5e20130"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:1728afe1-bad4-4b98-b1e0-3a80fb733ea5" outputs="mmuuid/aa692eef-b07a-4e1e-b29a-1dd83d1ba62f">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/7220ca2b-38f1-4dd9-9cb1-aa80cc956bff"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:3b3c0531-8f2d-4c1c-a305-94c7db046f0a" outputs="mmuuid/2b773da4-4686-4479-b07e-6c69e6a733e2">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/9f9c490f-cff9-4a4c-8f22-b92480028aa3"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:e0497c7d-9ca9-4437-9438-fec173ae6adc" outputs="mmuuid/98a7b6d1-af93-4384-ae1e-ce8c583ab370">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/bb45666c-effe-4ddf-be49-8c140210f209"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:6556d4db-b739-4f42-b078-addf5eb39941" outputs="mmuuid/f5efc9f5-aefa-4fa6-8979-80b99d6ce7ee">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/666590a9-2649-479d-aad5-c5725a45ded7"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:36239df9-2ae1-491f-a69a-247ba7e7a220" outputs="mmuuid/b41b64b4-9161-415e-813f-5febc10dc729">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/56f0cefd-e989-4028-876b-101d5bd8fa7f"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:36375207-8611-491f-9f23-0b363ba69586" outputs="mmuuid/912cc434-7e55-4254-b2d3-52b1a8b3fa1b">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/ae9a2eab-5106-441d-86c4-f3d8815bea72"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:bb8ddd5c-9d72-462b-9fae-2dad1115f332" outputs="mmuuid/f82b51f5-8472-4e7f-8f54-2a37bd810060">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/1c664e64-d018-4223-80d8-238c3421b5d7"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:94316be0-cc67-46f8-bb5a-a010207bbac3" outputs="mmuuid/088c26d6-1b64-4d2b-9498-5e2cd568c15f">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/19e920db-e93e-4399-9cdf-a5f6888a0b44"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:ae8fd44e-0840-41c8-9cea-644d78cc56f3" outputs="mmuuid/46471cd9-49d5-449f-9fbb-e2ddf197d883">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/6c0ffa3b-d391-4a39-a2b2-a1c03ceaef7d"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:a813052a-93cb-4a4d-88a0-c7188aed39e9" outputs="mmuuid/f1e931b4-360b-4dbe-b195-42651032e48c">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/011800dc-a6ac-4dba-aa8e-fad0160443e3"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:e4911fe7-c8af-4d87-bdbb-2c5f22697f78" outputs="mmuuid/b003883d-21a5-49bc-abf0-f010a4491319">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/c420088f-42a4-408e-b15a-9e3daffbe79e"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:2d79769a-0756-4a46-aa20-c4b44ad5fc87" outputs="mmuuid/b8d64c95-8d8c-4754-bfb8-e6fee42a28b2">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/a364c000-84fc-489e-aac2-6a7a10afa0b4"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:7f7bed69-e182-43eb-8f9a-b68a5de7d7fc" outputs="mmuuid/4710f95b-7338-4892-b0a7-21e0518ab6cd">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/2a1f9a3b-acba-4f29-a90d-13cd33780277"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:69934530-ffb1-401d-9173-81e28e0ab57a" outputs="mmuuid/bb0d09e5-3a9d-4554-a967-f59f46a97cc1">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/3f463586-ddff-4255-9908-6487680f19e1"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:e19c7803-9eeb-45fd-aa74-8701ad7552de" outputs="mmuuid/3349af1a-349c-4996-8965-f234112749d9">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/5ba0b2e7-1918-458f-a115-a50a57feee96"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:1cc396a0-a81b-4ecf-b247-8bd8dfeadb27" outputs="mmuuid/2161b3c8-846b-4fb9-9265-3950e8451e65">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/7b8cd465-cb63-4156-a3e9-9942b6836ce2"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:2a2e4ec5-9fad-495d-94f0-d6c9091bd589" outputs="mmuuid/2365bfbd-2a88-4a03-8755-864da385bc4e">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/1a13239a-553e-4527-97aa-4ffd7d756667"/>
+      </nested>
+      <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/839b80d4-ba56-4286-8674-78359388da99"/>
+    </transformationMappings>
+  </transformation:TransformationContainer>
+  <diagram:DiagramContainer xmi:uuid="mmuuid:d5cdc3a0-2697-41b0-b56a-a9a528d625e2">
+    <diagram xmi:uuid="mmuuid:3975f612-8a4a-40e0-94ec-8f842a56aa82" type="packageDiagramType" target="mmuuid/802cbb4d-80f4-4fbb-ab7c-f8241645d130">
+      <diagramEntity xmi:uuid="mmuuid:b506c4c6-5a43-4390-b110-80f02aaa641c" modelObject="mmuuid/a90c09f6-8832-4955-b30b-01e5ea1c311b" xPosition="10" yPosition="10"/>
+    </diagram>
+    <diagram xmi:uuid="mmuuid:f09c9214-59ad-4fba-9cc3-c41dd4a33ed3" type="transformationDiagramType" target="mmuuid/a90c09f6-8832-4955-b30b-01e5ea1c311b">
+      <diagramEntity xmi:uuid="mmuuid:dd6966f3-e4af-42a7-b6b9-af9368a44278" modelObject="mmuuid/a90c09f6-8832-4955-b30b-01e5ea1c311b" xPosition="30" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:59e11f36-40e4-4d5b-98ae-3d720e92e070" name="T" modelObject="mmuuid/096097bf-130a-43ad-9608-ac36f9be0def" xPosition="286" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:9aed11c7-0680-45f2-8620-b8f9fc7f0822" xPosition="336" yPosition="50">
+        <modelObject href="../source-model-definitions/IbisArticle.xmi#mmuuid/839b80d4-ba56-4286-8674-78359388da99"/>
+      </diagramEntity>
+    </diagram>
+  </diagram:DiagramContainer>
+</xmi:XMI>

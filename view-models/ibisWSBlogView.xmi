@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagram="http://www.metamatrix.com/metamodels/Diagram" xmlns:mmcore="http://www.metamatrix.com/metamodels/Core" xmlns:relational="http://www.metamatrix.com/metamodels/Relational" xmlns:transformation="http://www.metamatrix.com/metamodels/Transformation">
+  <mmcore:ModelAnnotation xmi:uuid="mmuuid:5863f300-c397-41a3-b1ef-fe91393342dd" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational" modelType="VIRTUAL" ProducerName="Teiid Designer" ProducerVersion="7.7.3.v20130328-2153-H3-Final">
+    <modelImports xmi:uuid="mmuuid:7c7b4215-19b6-442f-9a7b-4e11da48f65c" name="XMLSchema" modelLocation="http://www.w3.org/2001/XMLSchema" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:0c4f37af-639d-472e-ae72-3a7b87cce3c9" name="SimpleDatatypes-instance" modelLocation="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:567b9c13-d9a4-497a-a3fc-ed8060081b29" name="WsBlog" modelLocation="../source-model-definitions/WsBlog.xmi" uuid="mmuuid:3b0cd0f6-6578-4bf1-bc98-4be7a8053d7e" modelType="PHYSICAL" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational"/>
+  </mmcore:ModelAnnotation>
+  <relational:BaseTable xmi:uuid="mmuuid:deaa445b-c781-4ff5-87eb-54801cca41e0" name="WsBlog" nameInSource="WsBlog" supportsUpdate="false">
+    <columns xmi:uuid="mmuuid:33ef9d67-f346-406e-b3a7-aa2411d44e17" name="url" length="4000" nullable="NULLABLE_UNKNOWN" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
+      <nativeType xsi:nil="true"/>
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:d1701907-80b5-4d8b-8302-c329928cab44" name="author" length="4000" nullable="NULLABLE_UNKNOWN" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
+      <nativeType xsi:nil="true"/>
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:9416923b-2d99-4ea4-9918-74f94bffc475" name="lastPublishDate" nameInSource="modified" length="4000" nullable="NULLABLE_UNKNOWN" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
+      <nativeType xsi:nil="true"/>
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:594fa0da-a232-4037-a05c-6995732da235" name="title" length="4000" nullable="NULLABLE_UNKNOWN" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
+      <nativeType xsi:nil="true"/>
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:51148016-054d-4e2e-b2a9-7af94dc816ec" name="content" nullable="NULLABLE_UNKNOWN" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
+      <nativeType xsi:nil="true"/>
+      <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#clob"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:b658cde5-de36-4130-96ef-1cbc84b55812" name="descrption" nameInSource="excerpt" length="4000" nullable="NULLABLE_UNKNOWN" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
+      <nativeType xsi:nil="true"/>
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:ff68e6e7-ca9a-4f1f-8789-ffc0cd778e41" name="slug" length="4000" nullable="NULLABLE_UNKNOWN" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
+      <nativeType xsi:nil="true"/>
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:76f953fd-52c4-482f-ad99-718652925998" name="firstPublishDate" nameInSource="date" length="4000" nullable="NULLABLE_UNKNOWN" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
+      <nativeType xsi:nil="true"/>
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+  </relational:BaseTable>
+  <transformation:TransformationContainer xmi:uuid="mmuuid:f12143af-5255-4bca-ac9d-b23b48528643">
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:50951858-8f56-42bd-b9cd-0cf5e5de97eb" outputs="mmuuid/deaa445b-c781-4ff5-87eb-54801cca41e0" target="mmuuid/deaa445b-c781-4ff5-87eb-54801cca41e0">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:0e0289a4-2979-4b34-b930-642c95a25bcc">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:16a2a5cb-83d9-4253-9fca-6fca6d0c7101" selectSql="SELECT WsBlog.WsBlog.url, WsBlog.WsBlog.author, WsBlog.WsBlog.lastPublishDate, WsBlog.WsBlog.title, WsBlog.WsBlog.content, WsBlog.WsBlog.descrption, WsBlog.WsBlog.slug, WsBlog.WsBlog.firstPublishDate FROM WsBlog.WsBlog WHERE WsBlog.WsBlog.type = 'blog'"/>
+        <aliases xmi:uuid="mmuuid:3526e2c6-516f-44ad-a879-ab1c75c20a71" alias="WsBlog">
+          <aliasedObject href="../source-model-definitions/WsBlog.xmi#mmuuid/70d18fbc-6ea2-4129-ba47-520da6f75ee3"/>
+        </aliases>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:e15aa1f1-490b-4200-ad78-4bc5944c10ac" outputs="mmuuid/33ef9d67-f346-406e-b3a7-aa2411d44e17">
+        <inputs href="../source-model-definitions/WsBlog.xmi#mmuuid/75e34129-e02b-4d64-a817-c2dcac6e46be"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:1084ea6f-c7f2-4d10-8b5c-28b554f67f11" outputs="mmuuid/d1701907-80b5-4d8b-8302-c329928cab44">
+        <inputs href="../source-model-definitions/WsBlog.xmi#mmuuid/40daed62-b1d5-4fe2-86ac-88237692bb61"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:36ea6448-dbd2-4972-8ea5-60e8d798c85f" outputs="mmuuid/9416923b-2d99-4ea4-9918-74f94bffc475">
+        <inputs href="../source-model-definitions/WsBlog.xmi#mmuuid/3a8e61c0-b793-45a1-a487-dc6579286379"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:88a57693-d181-4ff9-917e-c842976fd4f4" outputs="mmuuid/594fa0da-a232-4037-a05c-6995732da235">
+        <inputs href="../source-model-definitions/WsBlog.xmi#mmuuid/21503601-ed2c-49f6-89fa-c28038e64d83"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:36a9c551-a24f-43c3-a572-0c68bd63fe7e" outputs="mmuuid/51148016-054d-4e2e-b2a9-7af94dc816ec">
+        <inputs href="../source-model-definitions/WsBlog.xmi#mmuuid/3eff917a-7566-49fa-b7af-dc95180d7b7e"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:0443d8cb-66b9-4e22-ac68-b578d928af41" outputs="mmuuid/b658cde5-de36-4130-96ef-1cbc84b55812">
+        <inputs href="../source-model-definitions/WsBlog.xmi#mmuuid/d76e77f7-780a-4547-87e9-604e721d3d90"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:de86681b-a85e-40f9-a861-c06204f6a603" outputs="mmuuid/ff68e6e7-ca9a-4f1f-8789-ffc0cd778e41">
+        <inputs href="../source-model-definitions/WsBlog.xmi#mmuuid/f02715d9-8f1d-4e4e-a95d-f7b4e01d2501"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:e2d95db1-dcf1-4a3e-90b9-840758903a2a" outputs="mmuuid/76f953fd-52c4-482f-ad99-718652925998">
+        <inputs href="../source-model-definitions/WsBlog.xmi#mmuuid/1ab7f884-34d2-4f6b-b8bf-b4fb44380e11"/>
+      </nested>
+      <inputs href="../source-model-definitions/WsBlog.xmi#mmuuid/70d18fbc-6ea2-4129-ba47-520da6f75ee3"/>
+    </transformationMappings>
+  </transformation:TransformationContainer>
+  <mmcore:AnnotationContainer xmi:uuid="mmuuid:05629721-cd64-4969-9b3c-9f01ab34b73f"/>
+  <diagram:DiagramContainer xmi:uuid="mmuuid:76dc7ac4-51c3-49c1-afb0-9e541aa148c4">
+    <diagram xmi:uuid="mmuuid:8b253925-8aac-4eff-9ac6-eb969d1774a2" type="packageDiagramType" target="mmuuid/5863f300-c397-41a3-b1ef-fe91393342dd">
+      <diagramEntity xmi:uuid="mmuuid:e8d10a91-2503-4c00-85c3-8c8ce72d0fd4" modelObject="mmuuid/deaa445b-c781-4ff5-87eb-54801cca41e0" xPosition="10" yPosition="10"/>
+    </diagram>
+    <diagram xmi:uuid="mmuuid:d44468f9-6e0b-4c28-85ec-81fe21ed69f5" type="transformationDiagramType" target="mmuuid/deaa445b-c781-4ff5-87eb-54801cca41e0">
+      <diagramEntity xmi:uuid="mmuuid:dde398a6-2947-46d7-8692-729a75a38197" modelObject="mmuuid/deaa445b-c781-4ff5-87eb-54801cca41e0" xPosition="30" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:6c938b5b-95c0-4ad4-9e14-93e005aa78a2" name="T" modelObject="mmuuid/50951858-8f56-42bd-b9cd-0cf5e5de97eb" xPosition="286" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:3398eda7-6c3e-455c-9eb7-d94bf3ce7c1e" xPosition="336" yPosition="50">
+        <modelObject href="../source-model-definitions/WsBlog.xmi#mmuuid/70d18fbc-6ea2-4129-ba47-520da6f75ee3"/>
+      </diagramEntity>
+    </diagram>
+  </diagram:DiagramContainer>
+</xmi:XMI>

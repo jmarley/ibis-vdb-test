@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:diagram="http://www.metamatrix.com/metamodels/Diagram" xmlns:mmcore="http://www.metamatrix.com/metamodels/Core" xmlns:relational="http://www.metamatrix.com/metamodels/Relational">
+  <mmcore:ModelAnnotation xmi:uuid="mmuuid:76d711ae-0315-4ec2-8a5b-f7c9de1a110d" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational" modelType="PHYSICAL" ProducerName="Teiid Designer" ProducerVersion="7.7.3.v20130328-2153-H3-Final">
+    <modelImports xmi:uuid="mmuuid:8576e3c6-42f3-4a78-8b0b-3692262658a6" name="XMLSchema" modelLocation="http://www.w3.org/2001/XMLSchema" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:00c003e2-5d6f-42bd-a6c5-6414c0ae47e2" name="SimpleDatatypes-instance" modelLocation="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+  </mmcore:ModelAnnotation>
+  <diagram:DiagramContainer xmi:uuid="mmuuid:d612d1a2-8ffb-4991-a7bb-a1636b48def1">
+    <diagram xmi:uuid="mmuuid:59a28be8-8613-4246-b800-c4bfe39ca863" type="packageDiagramType" target="mmuuid/76d711ae-0315-4ec2-8a5b-f7c9de1a110d">
+      <diagramEntity xmi:uuid="mmuuid:8a19ba49-e15a-4ff3-8d58-65d0c839c8ba" name="video" modelObject="mmuuid/51e786bd-e42b-473b-bb90-cc9d0a0a0dcb" xPosition="20" yPosition="20"/>
+    </diagram>
+  </diagram:DiagramContainer>
+  <relational:BaseTable xmi:uuid="mmuuid:51e786bd-e42b-473b-bb90-cc9d0a0a0dcb" name="video" nameInSource="video" supportsUpdate="false">
+    <columns xmi:uuid="mmuuid:1c1aa815-951e-42ff-8092-e47926349d30" name="url" nameInSource="uri" nativeType="string" length="4000" nullable="NO_NULLS">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:9c76c8d5-a85e-4e17-b400-41ffd48aa271" name="type" nameInSource="type" nativeType="string" length="4000" nullable="NO_NULLS">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:d7847179-ef0a-4345-9f18-ac47fea6002c" name="headline" nameInSource="headline" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:ccd35f72-001b-466e-857a-3783ea8de528" name="title" nameInSource="title" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:cd6d363e-de4d-4eba-bed7-4c554a53fd03" name="description" nameInSource="desc.paragraphs[0].text" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:bf1f0e90-f241-40c7-b938-f6eb0d2a60d0" name="slug" nameInSource="slug" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:ddb9c16e-d3bb-4a31-abcc-f39071106b80" name="firstPublishDate" nameInSource="firstPublishDate" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:936e3615-166d-4f6f-b4cc-6810e144e833" name="lastPublishDate" nameInSource="publishDate" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:792c5647-a084-4503-a0b1-03fd7cc102fd" name="videoId" nameInSource="" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:46ecc617-e87d-4cf1-853d-622a3b9df9cd" name="cvpXml" nameInSource="uri" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:1e95803c-df23-4eec-ae22-d9c335cf1dc9" name="isExpired" nameInSource="isExpired" nativeType="boolean">
+      <type href="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:5cc83115-69ba-4a31-81ae-b2f6ca9a6344" name="metadata" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:424bbc53-c7ab-498f-a484-a05293c57324" name="show" nameInSource="show" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:04eb4646-7e77-4af6-b60d-37048aceb874" name="source" nameInSource="source" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:1fbc1655-ca0b-435e-a155-caa9c6812442" name="editorialSource" nameInSource="editorialSource" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:f8e71916-2b6e-4cd5-b043-7b9309da49ed" name="branding" nameInSource="branding" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:6a00e099-687b-45e6-ae5f-277ea5b655a2" name="section" nameInSource="section" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:78788844-f5ca-4b3f-9a91-a3105bb6e37f" name="trt" nameInSource="trt" nativeType="float" length="25" precision="10">
+      <type href="http://www.w3.org/2001/XMLSchema#float"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:bd628cf0-4f7e-4e34-9624-6f5f9f7c5b31" name="duration" nameInSource="duration" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:4af39798-c553-4595-ac82-fbc19fc2b2a0" name="cdnUrl" nameInSource="" nativeType="string">
+      <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#clob"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:e10f08ce-74af-4c8c-b7d8-036dd9e47657" name="relatedMedia" nativeType="string">
+      <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#clob"/>
+    </columns>
+  </relational:BaseTable>
+  <mmcore:AnnotationContainer xmi:uuid="mmuuid:814a60cb-ccd4-47fb-9c17-7c8658c4fb08"/>
+</xmi:XMI>

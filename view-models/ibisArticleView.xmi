@@ -5,7 +5,7 @@
     <modelImports xmi:uuid="mmuuid:f301d22f-20a9-4792-98b9-e58367a8f77b" name="SimpleDatatypes-instance" modelLocation="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
     <modelImports xmi:uuid="mmuuid:6aa59e17-c1b7-4201-b0f5-ea39eea92782" name="XMLSchema" modelLocation="http://www.w3.org/2001/XMLSchema" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
   </mmcore:ModelAnnotation>
-  <relational:BaseTable xmi:uuid="mmuuid:a90c09f6-8832-4955-b30b-01e5ea1c311b" name="IbisArticle" nameInSource="IbisArticle" supportsUpdate="false">
+  <relational:BaseTable xmi:uuid="mmuuid:a90c09f6-8832-4955-b30b-01e5ea1c311b" name="article" nameInSource="IbisArticle" supportsUpdate="false">
     <columns xmi:uuid="mmuuid:6730ba51-38e4-4ec2-95dc-b4a233884bcc" name="url" nameInSource="" length="4000" nullable="NULLABLE_UNKNOWN" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
       <nativeType xsi:nil="true"/>
       <type href="http://www.w3.org/2001/XMLSchema#string"/>
@@ -69,12 +69,15 @@
     <columns xmi:uuid="mmuuid:2365bfbd-2a88-4a03-8755-864da385bc4e" name="relatedMedia">
       <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#clob"/>
     </columns>
+    <columns xmi:uuid="mmuuid:e8f6a57d-c012-42cc-9bed-6b7f30a49258" name="type" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
   </relational:BaseTable>
   <mmcore:AnnotationContainer xmi:uuid="mmuuid:1a6c81b3-df14-44e3-a705-ce264fd23639"/>
   <transformation:TransformationContainer xmi:uuid="mmuuid:bed04c9a-220e-4f0e-a334-612f9736bf90">
     <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:096097bf-130a-43ad-9608-ac36f9be0def" outputs="mmuuid/a90c09f6-8832-4955-b30b-01e5ea1c311b" target="mmuuid/a90c09f6-8832-4955-b30b-01e5ea1c311b">
       <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:6464cecb-ce5e-4d1f-a46f-d6ebaae4b1da">
-        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:2b95a228-cea9-4652-968c-447c25c1460b" selectSql="SELECT&#xa;&#x9;&#x9;IbisArticle.IbisArticle.url, IbisArticle.IbisArticle.headline, IbisArticle.IbisArticle.title, IbisArticle.IbisArticle.mobileHeadline, IbisArticle.IbisArticle.description, IbisArticle.IbisArticle.slug, IbisArticle.IbisArticle.firstPublishDate, IbisArticle.IbisArticle.lastPublishDate, IbisArticle.IbisArticle.editorialSource, IbisArticle.IbisArticle.dataStore, IbisArticle.IbisArticle.byline, IbisArticle.IbisArticle.branding, IbisArticle.IbisArticle.section, IbisArticle.IbisArticle.location, IbisArticle.IbisArticle.hightlights, IbisArticle.IbisArticle.partner, IbisArticle.IbisArticle.smsBody, IbisArticle.IbisArticle.body, IbisArticle.IbisArticle.relatedMedia&#xa;&#x9;FROM&#xa;&#x9;&#x9;IbisArticle.IbisArticle&#xa;&#x9;WHERE&#xa;&#x9;&#x9;IbisArticle.IbisArticle.type = 'article'"/>
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:2b95a228-cea9-4652-968c-447c25c1460b" selectSql="SELECT&#xa;&#x9;&#x9;IbisArticle.IbisArticle.url, IbisArticle.IbisArticle.headline, IbisArticle.IbisArticle.title, IbisArticle.IbisArticle.mobileHeadline, IbisArticle.IbisArticle.description, IbisArticle.IbisArticle.slug, IbisArticle.IbisArticle.firstPublishDate, IbisArticle.IbisArticle.lastPublishDate, IbisArticle.IbisArticle.editorialSource, IbisArticle.IbisArticle.dataStore, IbisArti&#xa;&#x9;WHERE&#xa;&#x9;&#x9;IbisArticle.IbisArticle.type = 'article'cle.IbisArticle.byline, IbisArticle.IbisArticle.branding, IbisArticle.IbisArticle.section, IbisArticle.IbisArticle.location, IbisArticle.IbisArticle.hightlights, IbisArticle.IbisArticle.partner, IbisArticle.IbisArticle.smsBody, IbisArticle.IbisArticle.body, IbisArticle.IbisArticle.relatedMedia, IbisArticle.IbisArticle.type&#xa;&#x9;FROM&#xa;&#x9;&#x9;IbisArticle.IbisArticle"/>
         <aliases xmi:uuid="mmuuid:84c6dde0-5939-463f-a2ad-cbc29561796c" alias="IbisArticle">
           <aliasedObject href="../source-model-definitions/IbisArticle.xmi#mmuuid/839b80d4-ba56-4286-8674-78359388da99"/>
         </aliases>
@@ -136,6 +139,9 @@
       <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:2a2e4ec5-9fad-495d-94f0-d6c9091bd589" outputs="mmuuid/2365bfbd-2a88-4a03-8755-864da385bc4e">
         <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/1a13239a-553e-4527-97aa-4ffd7d756667"/>
       </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:e78593f7-32c1-40f6-a30e-786561244d9c" outputs="mmuuid/e8f6a57d-c012-42cc-9bed-6b7f30a49258">
+        <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/5c9bb435-c739-450f-9d43-47ce66a3a7df"/>
+      </nested>
       <inputs href="../source-model-definitions/IbisArticle.xmi#mmuuid/839b80d4-ba56-4286-8674-78359388da99"/>
     </transformationMappings>
   </transformation:TransformationContainer>
@@ -144,7 +150,7 @@
       <diagramEntity xmi:uuid="mmuuid:b506c4c6-5a43-4390-b110-80f02aaa641c" modelObject="mmuuid/a90c09f6-8832-4955-b30b-01e5ea1c311b" xPosition="10" yPosition="10"/>
     </diagram>
     <diagram xmi:uuid="mmuuid:f09c9214-59ad-4fba-9cc3-c41dd4a33ed3" type="transformationDiagramType" target="mmuuid/a90c09f6-8832-4955-b30b-01e5ea1c311b">
-      <diagramEntity xmi:uuid="mmuuid:dd6966f3-e4af-42a7-b6b9-af9368a44278" modelObject="mmuuid/a90c09f6-8832-4955-b30b-01e5ea1c311b" xPosition="30" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:dd6966f3-e4af-42a7-b6b9-af9368a44278" name="article" modelObject="mmuuid/a90c09f6-8832-4955-b30b-01e5ea1c311b" xPosition="30" yPosition="50"/>
       <diagramEntity xmi:uuid="mmuuid:59e11f36-40e4-4d5b-98ae-3d720e92e070" name="T" modelObject="mmuuid/096097bf-130a-43ad-9608-ac36f9be0def" xPosition="286" yPosition="50"/>
       <diagramEntity xmi:uuid="mmuuid:9aed11c7-0680-45f2-8620-b8f9fc7f0822" xPosition="336" yPosition="50">
         <modelObject href="../source-model-definitions/IbisArticle.xmi#mmuuid/839b80d4-ba56-4286-8674-78359388da99"/>

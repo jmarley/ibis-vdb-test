@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagram="http://www.metamatrix.com/metamodels/Diagram" xmlns:mmcore="http://www.metamatrix.com/metamodels/Core" xmlns:relational="http://www.metamatrix.com/metamodels/Relational" xmlns:transformation="http://www.metamatrix.com/metamodels/Transformation">
+  <mmcore:ModelAnnotation xmi:uuid="mmuuid:6160c9db-5147-4858-96ae-382fab25bb05" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational" modelType="VIRTUAL" ProducerName="Teiid Designer" ProducerVersion="7.7.3.v20130328-2153-H3-Final">
+    <modelImports xmi:uuid="mmuuid:e563fa2d-8a1b-4ec0-8123-b3bd3ac599c3" name="XMLSchema" modelLocation="http://www.w3.org/2001/XMLSchema" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:ea3161b9-c1c7-4adc-813b-36828aa5ec4f" name="SimpleDatatypes-instance" modelLocation="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:cd6ac4af-4e02-4b8f-bf27-b29f3b926a46" name="ibisVideo" modelLocation="../source-model-definitions/ibisVideo.xmi" uuid="mmuuid:76d711ae-0315-4ec2-8a5b-f7c9de1a110d" modelType="PHYSICAL" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational"/>
+  </mmcore:ModelAnnotation>
+  <relational:BaseTable xmi:uuid="mmuuid:56478fdb-4011-47bd-b239-83bc646a6584" name="video" nameInSource="video" supportsUpdate="false">
+    <columns xmi:uuid="mmuuid:bfa68d00-76a1-41a2-80ac-eca4f33498af" name="url" nameInSource="uri" nativeType="string" length="4000" nullable="NO_NULLS">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:1adb9898-3e11-4fdf-a17e-6c5bcab59df8" name="type" nameInSource="type" nativeType="string" length="4000" nullable="NO_NULLS">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:51af507c-30da-4ec8-9f73-1463da52e40c" name="headline" nameInSource="headline" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:17700b97-1790-4340-85cd-bda6e69feca1" name="title" nameInSource="title" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:e838470f-d086-4675-8e38-a9930be5db46" name="description" nameInSource="desc.paragraphs[0].text" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:2b49b3d6-0915-49b4-89f1-3015bed50ff6" name="slug" nameInSource="slug" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:8cd739c4-91dc-4aa4-8a19-90e1435d1fce" name="firstPublishDate" nameInSource="firstPublishDate" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:6b43c71b-35b4-4c37-96d1-13c4a1655005" name="lastPublishDate" nameInSource="publishDate" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:74be9bfa-a499-4100-b03f-044775a0ee36" name="videoId" nameInSource="" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:37295e9a-3042-438a-ac5a-fca92410990f" name="cvpXml" nameInSource="uri" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:dadfc2ad-ea0b-487d-8bfc-b19809211de9" name="isExpired" nameInSource="isExpired" nativeType="boolean">
+      <type href="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:9bc8656b-2295-4b35-8e08-40f4edb98bd8" name="metadata" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:c96f813c-cd51-42c5-baa9-f0343af184b9" name="show" nameInSource="show" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:a390d841-a146-41ed-af4f-bbe87bb83dc0" name="source" nameInSource="source" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:f668fdf4-42f6-47ba-be27-b0515220ccad" name="editorialSource" nameInSource="editorialSource" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:1d1f1c5f-a53e-40de-a754-e749cf6c5525" name="branding" nameInSource="branding" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:48fdb798-e849-4339-9a70-e3c2ee694bae" name="section" nameInSource="section" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:3b72e6c5-12cc-441a-a6f4-839541f35ca7" name="trt" nameInSource="trt" nativeType="float" length="25" precision="10">
+      <type href="http://www.w3.org/2001/XMLSchema#float"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:4b850bd2-69c4-45bd-897e-a121c954b2ff" name="duration" nameInSource="duration" nativeType="string" length="4000">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:6f2c1533-dedd-4f16-947f-eb21f98f22ec" name="cdnUrl" nameInSource="" nativeType="string">
+      <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#clob"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:1c988f20-e1bf-4444-a374-47c5af953fdf" name="relatedMedia" nativeType="string">
+      <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#clob"/>
+    </columns>
+  </relational:BaseTable>
+  <mmcore:AnnotationContainer xmi:uuid="mmuuid:88555b66-85ac-4f98-b7ed-1a09a41f1b6e"/>
+  <transformation:TransformationContainer xmi:uuid="mmuuid:a1e0372b-c164-4c24-9aa5-49887aeda039">
+    <transformationMappings xsi:type="transformation:SqlTransformationMappingRoot" xmi:uuid="mmuuid:dc2acc29-6ff6-4c02-9203-743bd1bfd97f" outputs="mmuuid/56478fdb-4011-47bd-b239-83bc646a6584" target="mmuuid/56478fdb-4011-47bd-b239-83bc646a6584">
+      <helper xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:9f00f9ce-b8ef-4408-a6ce-a5ba8340f724">
+        <nested xsi:type="transformation:SqlTransformation" xmi:uuid="mmuuid:d1a22bcf-9553-4cea-a784-cee5863c24a5" selectSql="SELECT * FROM ibisVideo.video"/>
+        <aliases xmi:uuid="mmuuid:c6f6a0c3-110e-4507-bf4b-fec3fc5347d8" alias="video">
+          <aliasedObject href="../source-model-definitions/ibisVideo.xmi#mmuuid/51e786bd-e42b-473b-bb90-cc9d0a0a0dcb"/>
+        </aliases>
+      </helper>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:345e97e9-56d0-41a3-935a-02425946aecc" outputs="mmuuid/bfa68d00-76a1-41a2-80ac-eca4f33498af">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/1c1aa815-951e-42ff-8092-e47926349d30"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:2fdd9a0d-1522-4360-9165-7e1379236a7b" outputs="mmuuid/1adb9898-3e11-4fdf-a17e-6c5bcab59df8">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/9c76c8d5-a85e-4e17-b400-41ffd48aa271"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:8b3af698-8f20-489a-a42e-01e680e2644d" outputs="mmuuid/51af507c-30da-4ec8-9f73-1463da52e40c">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/d7847179-ef0a-4345-9f18-ac47fea6002c"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:32fbba82-c59d-4f17-94df-c2174b6ba34f" outputs="mmuuid/17700b97-1790-4340-85cd-bda6e69feca1">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/ccd35f72-001b-466e-857a-3783ea8de528"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:c5d8beb7-73dd-4b15-91cb-091684e18445" outputs="mmuuid/e838470f-d086-4675-8e38-a9930be5db46">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/cd6d363e-de4d-4eba-bed7-4c554a53fd03"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:090d1edb-4aa7-4eda-9e5f-e1cd5ad14bf5" outputs="mmuuid/2b49b3d6-0915-49b4-89f1-3015bed50ff6">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/bf1f0e90-f241-40c7-b938-f6eb0d2a60d0"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:c536f657-79db-427d-baf2-11502b7ae9f4" outputs="mmuuid/8cd739c4-91dc-4aa4-8a19-90e1435d1fce">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/ddb9c16e-d3bb-4a31-abcc-f39071106b80"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:cfd00462-ea05-4c04-a822-093101c2f564" outputs="mmuuid/6b43c71b-35b4-4c37-96d1-13c4a1655005">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/936e3615-166d-4f6f-b4cc-6810e144e833"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:9e8377f9-b8ad-4f4a-91bb-fc8a85434ef1" outputs="mmuuid/74be9bfa-a499-4100-b03f-044775a0ee36">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/792c5647-a084-4503-a0b1-03fd7cc102fd"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:d382b111-28e8-4120-94d6-95428e83d130" outputs="mmuuid/37295e9a-3042-438a-ac5a-fca92410990f">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/46ecc617-e87d-4cf1-853d-622a3b9df9cd"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:d9037214-a63f-4b19-bfb6-c5d3717b4fd2" outputs="mmuuid/dadfc2ad-ea0b-487d-8bfc-b19809211de9">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/1e95803c-df23-4eec-ae22-d9c335cf1dc9"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:e28ba95a-410e-44fe-a836-a45b42c70b99" outputs="mmuuid/9bc8656b-2295-4b35-8e08-40f4edb98bd8">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/5cc83115-69ba-4a31-81ae-b2f6ca9a6344"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:1b13e60a-922e-40d1-9f7c-58c12f6bc1a1" outputs="mmuuid/c96f813c-cd51-42c5-baa9-f0343af184b9">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/424bbc53-c7ab-498f-a484-a05293c57324"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:f21ac7fa-0a45-4145-b888-a4fa05c5e01c" outputs="mmuuid/a390d841-a146-41ed-af4f-bbe87bb83dc0">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/04eb4646-7e77-4af6-b60d-37048aceb874"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:83a00754-c6db-4438-8de9-f8ee0c30c402" outputs="mmuuid/f668fdf4-42f6-47ba-be27-b0515220ccad">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/1fbc1655-ca0b-435e-a155-caa9c6812442"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:ca8b8e81-6805-4a2b-a5ac-b023b5737766" outputs="mmuuid/1d1f1c5f-a53e-40de-a754-e749cf6c5525">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/f8e71916-2b6e-4cd5-b043-7b9309da49ed"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:929ec9cd-2c30-4ffa-af01-f6f13658cdf8" outputs="mmuuid/48fdb798-e849-4339-9a70-e3c2ee694bae">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/6a00e099-687b-45e6-ae5f-277ea5b655a2"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:a26345dc-0df0-4cc1-8b1c-fbbc83051ee5" outputs="mmuuid/3b72e6c5-12cc-441a-a6f4-839541f35ca7">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/78788844-f5ca-4b3f-9a91-a3105bb6e37f"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:a6b7f607-b262-452b-8774-f947624d51fe" outputs="mmuuid/4b850bd2-69c4-45bd-897e-a121c954b2ff">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/bd628cf0-4f7e-4e34-9624-6f5f9f7c5b31"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:89580d69-0848-46b6-bef5-f4f9ee3633ed" outputs="mmuuid/6f2c1533-dedd-4f16-947f-eb21f98f22ec">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/4af39798-c553-4595-ac82-fbc19fc2b2a0"/>
+      </nested>
+      <nested xsi:type="transformation:TransformationMapping" xmi:uuid="mmuuid:2eadfe21-02ab-44b5-b2d4-44d2490b0dfd" outputs="mmuuid/1c988f20-e1bf-4444-a374-47c5af953fdf">
+        <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/e10f08ce-74af-4c8c-b7d8-036dd9e47657"/>
+      </nested>
+      <inputs href="../source-model-definitions/ibisVideo.xmi#mmuuid/51e786bd-e42b-473b-bb90-cc9d0a0a0dcb"/>
+    </transformationMappings>
+  </transformation:TransformationContainer>
+  <diagram:DiagramContainer xmi:uuid="mmuuid:811d1fcd-bac6-495e-a6d2-d6399d300fd1">
+    <diagram xmi:uuid="mmuuid:f7672ea8-68df-4d13-afac-ca566e8071f6" type="packageDiagramType" target="mmuuid/6160c9db-5147-4858-96ae-382fab25bb05">
+      <diagramEntity xmi:uuid="mmuuid:72519935-1bf4-453e-9fef-1d6c8b60a1c7" name="content" modelObject="mmuuid/56478fdb-4011-47bd-b239-83bc646a6584" xPosition="10" yPosition="10"/>
+    </diagram>
+    <diagram xmi:uuid="mmuuid:6a9c77fa-c055-47cc-8c7f-3704ca221035" type="transformationDiagramType" target="mmuuid/56478fdb-4011-47bd-b239-83bc646a6584">
+      <diagramEntity xmi:uuid="mmuuid:f33e4183-a2f5-4ffd-af4f-f40e1396cbc9" name="video" modelObject="mmuuid/56478fdb-4011-47bd-b239-83bc646a6584" xPosition="30" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:30f13c10-b88a-4216-9dc4-cc363c318391" name="T" modelObject="mmuuid/dc2acc29-6ff6-4c02-9203-743bd1bfd97f" xPosition="286" yPosition="50"/>
+      <diagramEntity xmi:uuid="mmuuid:8b6d150e-7548-44ce-935f-9dbf6194cbbf" xPosition="336" yPosition="50">
+        <modelObject href="../source-model-definitions/ibisVideo.xmi#mmuuid/51e786bd-e42b-473b-bb90-cc9d0a0a0dcb"/>
+      </diagramEntity>
+    </diagram>
+  </diagram:DiagramContainer>
+</xmi:XMI>

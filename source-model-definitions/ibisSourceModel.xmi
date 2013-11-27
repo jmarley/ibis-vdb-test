@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="ASCII"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:diagram="http://www.metamatrix.com/metamodels/Diagram" xmlns:mmcore="http://www.metamatrix.com/metamodels/Core" xmlns:relational="http://www.metamatrix.com/metamodels/Relational">
   <mmcore:ModelAnnotation xmi:uuid="mmuuid:a728f96c-77ad-4003-b502-d734088a32fa" primaryMetamodelUri="http://www.metamatrix.com/metamodels/Relational" modelType="PHYSICAL" ProducerName="Teiid Designer" ProducerVersion="7.7.3.v20130328-2153-H3-Final">
-    <modelImports xmi:uuid="mmuuid:69a77ba7-179a-4160-8c17-e642e55f8910" name="SimpleDatatypes-instance" modelLocation="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
+    <modelImports xmi:uuid="mmuuid:e331c0eb-999e-4584-aef1-d8a70dbc768d" name="XMLSchema" modelLocation="http://www.w3.org/2001/XMLSchema" modelType="TYPE" primaryMetamodelUri="http://www.eclipse.org/xsd/2002/XSD"/>
   </mmcore:ModelAnnotation>
   <diagram:DiagramContainer xmi:uuid="mmuuid:4b1f8e61-c595-4bf9-9ecd-02ed2df98879">
     <diagram xmi:uuid="mmuuid:95129926-4394-4414-80f8-a8a492390be6" type="packageDiagramType" target="mmuuid/a728f96c-77ad-4003-b502-d734088a32fa">
-      <diagramEntity xmi:uuid="mmuuid:7664e426-887d-4e78-8bf7-1aa6e2fd3e16" modelObject="mmuuid/4ab491ec-ef68-422b-a2c5-37ad19bc0f79" xPosition="244" yPosition="104"/>
+      <diagramEntity xmi:uuid="mmuuid:7664e426-887d-4e78-8bf7-1aa6e2fd3e16" name="content" modelObject="mmuuid/4ab491ec-ef68-422b-a2c5-37ad19bc0f79" xPosition="244" yPosition="104"/>
     </diagram>
   </diagram:DiagramContainer>
-  <relational:BaseTable xmi:uuid="mmuuid:4ab491ec-ef68-422b-a2c5-37ad19bc0f79" name="idTable" nameInSource="">
-    <columns xmi:uuid="mmuuid:7f67670a-3873-424d-be06-6d7202fb1f72" name="id" nullable="NULLABLE_UNKNOWN" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
+  <relational:BaseTable xmi:uuid="mmuuid:4ab491ec-ef68-422b-a2c5-37ad19bc0f79" name="content" nameInSource="">
+    <columns xmi:uuid="mmuuid:7f67670a-3873-424d-be06-6d7202fb1f72" name="source" nullable="NULLABLE_UNKNOWN" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
       <nativeType xsi:nil="true"/>
-      <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#clob"/>
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
     </columns>
-    <columns xmi:uuid="mmuuid:8e23af71-be52-40e8-bf4b-dcc923ef5fc2" name="revisionNumber" nullable="NULLABLE_UNKNOWN" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
+    <columns xmi:uuid="mmuuid:8e23af71-be52-40e8-bf4b-dcc923ef5fc2" name="publishDate" nullable="NULLABLE_UNKNOWN" caseSensitive="false" radix="0" signed="false" distinctValueCount="0" nullValueCount="0">
       <nativeType xsi:nil="true"/>
-      <type href="http://www.metamatrix.com/metamodels/SimpleDatatypes-instance#clob"/>
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:9a5a5829-d8a2-45e7-a7a1-dedcca5ba507" name="type">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
+    </columns>
+    <columns xmi:uuid="mmuuid:79940667-7893-4726-be07-8aba12fd2093" name="headline">
+      <type href="http://www.w3.org/2001/XMLSchema#string"/>
     </columns>
   </relational:BaseTable>
   <mmcore:AnnotationContainer xmi:uuid="mmuuid:1c0907ee-d245-4bb6-ada6-3b5f05b8e4f8">
